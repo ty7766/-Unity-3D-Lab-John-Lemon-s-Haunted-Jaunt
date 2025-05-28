@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float turnSpeed = 20f;     //캐릭터 회전 속도
+
     Vector3 m_Movement;                                 //이동
     Quaternion m_Rotation = Quaternion.identity;        //회전 생성
     Animator m_Animator;                                //캐릭터 애니메이터
     Rigidbody m_Rigidbody;
-
-    public float turnSpeed = 20f;     //캐릭터 회전 속도
 
 
     //----------- 초기화 ------------
