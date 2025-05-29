@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Quaternion m_Rotation = Quaternion.identity;        //회전 생성
     Animator m_Animator;                                //캐릭터 애니메이터
     Rigidbody m_Rigidbody;
+    AudioSource m_AudioSource;                          //발소리 효과음
 
 
     //----------- 초기화 ------------
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -34,6 +36,19 @@ public class PlayerMovement : MonoBehaviour
 
         //isWalking 이 true이면 Walking Animation Start
         m_Animator.SetBool("IsWalking", isWalking);
+
+        //isWalking이 true이면 발소리 효과음, 아니면 정지
+        if (isWalking)
+        {
+            if (!m_AudioSource.isPlaying)
+            {
+                m_AudioSource.Play();
+            }
+        }
+        else
+        {
+            m_AudioSource.Stop();
+        }
 
         //캐릭터 회전 (turnSpeed만큼 회전 속도 제어)
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
