@@ -45,13 +45,16 @@ public class GameEnding : MonoBehaviour
         m_Timer += Time.deltaTime;
         imageCanvasGroup.alpha = m_Timer / fadeDuration;    //Fade In
 
-        if (doRestart)
+        if (m_Timer > fadeDuration +  displayImageDuration)
         {
-            SceneManager.LoadScene(0);      //Over : 재시작(이번 씬 불러오기)
-        }
-        else
-        {
-            Application.Quit();             //Clear : 게임 종료
+            if (doRestart)
+            {
+                SceneManager.LoadScene(0);      //Over : 재시작(이번 씬 불러오기)
+            }
+            else
+            {
+                Application.Quit();             //Clear : 게임 종료
+            }
         }
     }
 
