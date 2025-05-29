@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95324091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.0682335, y: 6.478673, z: -2.722703}
+  m_LocalPosition: {x: -5.3, y: 0, z: 6.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -178,7 +178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98531509}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4317667, y: 6.478673, z: 2.8772974}
+  m_LocalPosition: {x: 3.2, y: 0, z: 12.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -208,7 +208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167841138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4317667, y: 6.478673, z: -3.822703}
+  m_LocalPosition: {x: 3.2, y: 0, z: 5.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -244,7 +244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403584415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56823325, y: 6.478673, z: -1.722703}
+  m_LocalPosition: {x: 1.2, y: 0, z: 7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4075,7 +4075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918939608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4317667, y: 6.478673, z: -14.422703}
+  m_LocalPosition: {x: 3.2, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4158,11 +4158,6 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 918326612}
-    - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
-        type: 3}
-      propertyPath: wayPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
         type: 3}
       propertyPath: wayPoints.Array.data[0]
@@ -4276,7 +4271,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
   m_Layer: 8
@@ -4286,14 +4280,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -4469,7 +4455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964207145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8682333, y: 6.478673, z: -12.922703}
+  m_LocalPosition: {x: 0.9, y: 0, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4499,7 +4485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084629868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2682333, y: 6.478673, z: -13.922703}
+  m_LocalPosition: {x: -5.5, y: 0, z: -4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4647,7 +4633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299897029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.7317667, y: 6.478673, z: 2.8772974}
+  m_LocalPosition: {x: 6.5, y: 0, z: 12.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4725,7 +4711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348120794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.631767, y: 6.478673, z: -11.422703}
+  m_LocalPosition: {x: 7.4, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4755,7 +4741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416803233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.7317667, y: 6.478673, z: -3.822703}
+  m_LocalPosition: {x: 6.5, y: 0, z: 5.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787858024}
@@ -4838,11 +4824,6 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 918326612}
-    - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
-        type: 3}
-      propertyPath: wayPoints.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
         type: 3}
       propertyPath: wayPoints.Array.data[0]
@@ -4948,11 +4929,6 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 918326612}
-    - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
-        type: 3}
-      propertyPath: wayPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
         type: 3}
       propertyPath: wayPoints.Array.data[0]
@@ -5530,11 +5506,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2272361372608984505, guid: e7c9c3e578e1dc345b6b95aab76db49c,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
     - target: {fileID: 6515341357617311541, guid: e7c9c3e578e1dc345b6b95aab76db49c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5595,11 +5566,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: JohnLemon
       objectReference: {fileID: 0}
-    - target: {fileID: 6515341357624983773, guid: e7c9c3e578e1dc345b6b95aab76db49c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 00a30b3d8adec4c4eb5d3139d02068a6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c9c3e578e1dc345b6b95aab76db49c, type: 3}
 --- !u!4 &2041505447 stripped
@@ -5691,11 +5657,6 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 918326612}
-    - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
-        type: 3}
-      propertyPath: wayPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8949917021539216995, guid: 35ba60192ffbc194f8532c28d1c6b396,
         type: 3}
       propertyPath: wayPoints.Array.data[0]
