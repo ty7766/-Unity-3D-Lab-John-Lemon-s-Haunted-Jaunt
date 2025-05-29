@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameEnding : MonoBehaviour
@@ -22,11 +23,11 @@ public class GameEnding : MonoBehaviour
     {
         if (m_IsPlayerAtExit)
         {
-            EndLevel(exitBackgroundImageCanvasGroup);
+            EndLevel(exitBackgroundImageCanvasGroup, false);
         }
         else if (m_IsPlayerCaught)
         {
-            EndLevel(caughtBackgroundImageCanvasGroup);
+            EndLevel(caughtBackgroundImageCanvasGroup, true);
         }
     }
 
@@ -39,14 +40,23 @@ public class GameEnding : MonoBehaviour
     }
 
     //플레이어의 게임 클리어 및 게임 오버 이미지 보여주기
-    void EndLevel(CanvasGroup imageCanvasGroup)
+    void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart)
     {
         m_Timer += Time.deltaTime;
         imageCanvasGroup.alpha = m_Timer / fadeDuration;    //Fade In
 
-        if (m_Timer > fadeDuration + displayImageDuration)
+        if (doRestart)
         {
-            Application.Quit();
+            SceneManager.LoadScene(0);      //Over : 재시작(이번 씬 불러오기)
         }
+        else
+        {
+            Application.Quit();             //Clear : 게임 종료
+        }
+    }
+
+    public void CaughtPlayer()
+    {
+        m_IsPlayerCaught = true;
     }
 }
